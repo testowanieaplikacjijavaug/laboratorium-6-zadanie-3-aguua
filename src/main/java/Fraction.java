@@ -1,10 +1,10 @@
-package matchersExample;
-
-import com.google.common.annotations.VisibleForTesting;
-
 import java.io.Serializable;
 
+import org.assertj.core.util.VisibleForTesting;
+
 public final class Fraction implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     public static final Fraction of(final int nominator, final int denominator) {
         if(denominator == 0){
             if(nominator == 0)
@@ -24,19 +24,33 @@ public final class Fraction implements Serializable {
         return new Fraction(nominator,denominator);
     }
     public int getNominator(){
-        return denominator;
+        return nominator;
     }
     public int getDenominator(){
-        return nominator;
+        return denominator;
     }
     public double doubleValue(){
         return (double) nominator / (double) denominator;
     }
+    public Fraction add(Fraction a) {
+        int denominator = this.denominator * a.denominator;
+        int nominator = (this.nominator * a.denominator) + (this.denominator * a.nominator);
+        if ( nominator % denominator == 0 ) {
+            nominator /= denominator;
+            denominator = 1;
+        }
+        return of(nominator, denominator);
+    }
+
+    public Fraction multiply(Fraction n) {
+        return new Fraction(nominator * n.getNominator(), denominator * n.getDenominator());
+    }
+
     @Override
     public boolean equals(final Object rightSide){
         if(!(rightSide instanceof Fraction)) return false;
         final Fraction that = (Fraction) rightSide;
-        return (this == that) || (nominator = that.nominator && denominator == that.denominator);
+        return (this == that) || (nominator == that.nominator && denominator == that.denominator);
     }
     @Override
     public int hashCode(){
@@ -55,7 +69,8 @@ public final class Fraction implements Serializable {
         this.nominator = nominator;
     }
     public static final Fraction INDETERMINATE = new Fraction(0,0);
-    @VisibleForTesting static final Fraction FULL = new Fraction(1,1);
+    @VisibleForTesting
+    static final Fraction FULL = new Fraction(1,1);
     @VisibleForTesting static final Fraction HALF = new Fraction(1,2);
     @VisibleForTesting static final Fraction ONE_THIRD = new Fraction(1,3);
     private final int nominator;
