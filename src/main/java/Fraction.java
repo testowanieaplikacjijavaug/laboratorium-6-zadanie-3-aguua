@@ -43,7 +43,7 @@ public final class Fraction implements Serializable {
     }
 
     public Fraction multiply(Fraction n) {
-        return new Fraction(nominator * n.getNominator(), denominator * n.getDenominator());
+        return of(this.nominator * n.nominator, this.denominator * n.denominator);
     }
 
     @Override
