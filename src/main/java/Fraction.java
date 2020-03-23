@@ -42,6 +42,7 @@ public final class Fraction implements Serializable {
         return of(nominator, denominator);
     }
 
+
     public Fraction multiply(Fraction n) {
         return of(this.nominator * n.nominator, this.denominator * n.denominator);
     }

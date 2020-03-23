@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: FractionAssertJTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in FractionAssertJTest
+Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.113 s <<< FAILURE! - in FractionAssertJTest
+test_add  Time elapsed: 0.016 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <10/8>
+to be equal to:
+ <5/4>
+but was not.
+	at FractionAssertJTest.test_add(FractionAssertJTest.java:74)
+

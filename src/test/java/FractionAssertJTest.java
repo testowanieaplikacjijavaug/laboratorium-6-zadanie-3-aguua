@@ -21,6 +21,13 @@ public class FractionAssertJTest {
         final Fraction f = Fraction.of(1, 3);
         assertThat(f).isEqualTo(Fraction.ONE_THIRD);
     }
+    @Test
+    public void test_multiply_by_zero() {
+        final Fraction f = Fraction.of(1, 1)
+                .multiply(Fraction.of(0, 0));
+
+        assertThat(f).isEqualTo(Fraction.INDETERMINATE);
+    }
 
     @Test
     void test_hash_Code() {
@@ -57,6 +64,14 @@ public class FractionAssertJTest {
     void test_get_denominator() {
         final Fraction f = Fraction.of(1, 3);
         assertThat(f.getDenominator()).isEqualTo(3);
+    }
+
+    @Test
+    public void test_multiply() {
+        final Fraction actual = Fraction.HALF
+                .multiply(Fraction.HALF);
+
+        assertThat(actual).isEqualTo(Fraction.of(1,4));
     }
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="FractionAssertJTest" time="0.083" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="FractionAssertJTest" time="0.113" tests="13" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/agnieszka/Aga/dev-java/laboratorium-6-zadanie-3-aguua/target/surefire/surefirebooter8556219598566726859.jar /home/agnieszka/Aga/dev-java/laboratorium-6-zadanie-3-aguua/target/surefire 2020-03-23T20-25-45_084-jvmRun1 surefire7454167645963704965tmp surefire_09068709037456681959tmp"/>
+    <property name="sun.java.command" value="/home/agnieszka/Aga/dev-java/laboratorium-6-zadanie-3-aguua/target/surefire/surefirebooter6192573579107086561.jar /home/agnieszka/Aga/dev-java/laboratorium-6-zadanie-3-aguua/target/surefire 2020-03-23T21-26-09_559-jvmRun1 surefire2419387556605857847tmp surefire_07104107452281957951tmp"/>
     <property name="surefire.test.class.path" value="/home/agnieszka/Aga/dev-java/laboratorium-6-zadanie-3-aguua/target/test-classes:/home/agnieszka/Aga/dev-java/laboratorium-6-zadanie-3-aguua/target/classes:/home/agnieszka/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/home/agnieszka/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/agnieszka/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/agnieszka/.m2/repository/org/junit/jupiter/junit-jupiter/5.6.0/junit-jupiter-5.6.0.jar:/home/agnieszka/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:/home/agnieszka/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/agnieszka/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/agnieszka/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/agnieszka/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.0/junit-jupiter-params-5.6.0.jar:/home/agnieszka/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/agnieszka/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:/home/agnieszka/.m2/repository/org/assertj/assertj-core/3.15.0/assertj-core-3.15.0.jar:/home/agnieszka/.m2/repository/com/google/guava/guava/28.2-jre/guava-28.2-jre.jar:/home/agnieszka/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/agnieszka/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/agnieszka/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/agnieszka/.m2/repository/org/checkerframework/checker-qual/2.10.0/checker-qual-2.10.0.jar:/home/agnieszka/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/home/agnieszka/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/agnieszka"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/agnieszka/Aga/dev-java/laboratorium-6-zadanie-3-aguua/target/surefire/surefirebooter8556219598566726859.jar:/home/agnieszka/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar"/>
+    <property name="surefire.real.class.path" value="/home/agnieszka/Aga/dev-java/laboratorium-6-zadanie-3-aguua/target/surefire/surefirebooter6192573579107086561.jar:/home/agnieszka/.m2/repository/org/jacoco/org.jacoco.agent/0.8.2/org.jacoco.agent-0.8.2-runtime.jar"/>
     <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_242-8u242-b08-0ubuntu3~18.04-b08"/>
@@ -59,7 +59,27 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="test_full" classname="FractionAssertJTest" time="0.078"/>
-  <testcase name="test_half" classname="FractionAssertJTest" time="0"/>
+  <testcase name="test_to_string" classname="FractionAssertJTest" time="0.078"/>
+  <testcase name="test_full" classname="FractionAssertJTest" time="0.002"/>
+  <testcase name="test_half" classname="FractionAssertJTest" time="0.001"/>
+  <testcase name="test_add" classname="FractionAssertJTest" time="0.016">
+    <failure message="&#10;Expecting:&#10; &lt;10/8&gt;&#10;to be equal to:&#10; &lt;5/4&gt;&#10;but was not." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <10/8>
+to be equal to:
+ <5/4>
+but was not.
+	at FractionAssertJTest.test_add(FractionAssertJTest.java:74)
+]]></failure>
+  </testcase>
+  <testcase name="test_multiply" classname="FractionAssertJTest" time="0"/>
+  <testcase name="test_get_nominator" classname="FractionAssertJTest" time="0.002"/>
+  <testcase name="test_multiply_by_zero" classname="FractionAssertJTest" time="0.001"/>
+  <testcase name="test_hash_Code" classname="FractionAssertJTest" time="0.001"/>
+  <testcase name="test_zero_in_denominator_exception" classname="FractionAssertJTest" time="0.002"/>
+  <testcase name="test_get_denominator" classname="FractionAssertJTest" time="0"/>
+  <testcase name="test_not_equal" classname="FractionAssertJTest" time="0.001"/>
   <testcase name="test_one_third" classname="FractionAssertJTest" time="0"/>
+  <testcase name="test_equal" classname="FractionAssertJTest" time="0"/>
 </testsuite>
